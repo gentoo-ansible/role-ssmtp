@@ -1,7 +1,6 @@
 ---
 - name: install SSMTP
   portage: package=ssmtp
-  tags: packages
 
 - name: configure ssmtp.conf
   template: >
@@ -10,4 +9,3 @@
     owner=root
     group=ssmtp
     mode=0640
-  tags: configuration
